@@ -3,25 +3,31 @@
     font-size: 18px;
     background-color: dimgray;
 }
+label[for=file] {
+    color: #cccccc;
+    display: block;
+}
 
 input#file{
     outline: none;
 }
 
 #file::-webkit-file-upload-button {
-    visibility: hidden;
+    display: none;
     outline: none;
 }
 
 #file::before {
     content: 'Выбрать файл с условием';
-    display: inline-block;
+    display: block;
     background-color: rgba(26, 26, 26, 0.82);
     border: 2px solid rgba(78, 78, 78, 0.92);
     border-radius: 10px;
     text-align: center;
     color: #cccccc;
     height: 50px;
+    line-height: 50px;
+    margin: 10px;
     outline: none;
     cursor: pointer;
     font-weight: 700;
@@ -35,13 +41,14 @@ input#file{
     background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
 }
 
-button#save{
-
+#save{
+    display: block;
     background-color: rgba(26, 26, 26, 0.82);
     border: 2px solid rgba(78, 78, 78, 0.92);
     border-radius: 10px;
     color: #cccccc;
     height: 50px;
+    margin: 0 auto;
     outline: none;
     cursor: pointer;
     font-weight: 700;
@@ -49,4 +56,10 @@ button#save{
 
 button#save:hover{
     border: 2px solid rgba(255, 242, 1, 0.92);
+}
+
+main{
+    margin-top: 10%;
+    width: 100%;
+    text-align: center;
 }
