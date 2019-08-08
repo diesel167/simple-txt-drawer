@@ -1,0 +1,52 @@
+*{
+    font-family: "Arial Rounded MT Bold" sans-serif;
+    font-size: 18px;
+    background-color: dimgray;
+}
+
+input#file{
+    outline: none;
+}
+
+#file::-webkit-file-upload-button {
+    visibility: hidden;
+    outline: none;
+}
+
+#file::before {
+    content: 'Выбрать файл с условием';
+    display: inline-block;
+    background-color: rgba(26, 26, 26, 0.82);
+    border: 2px solid rgba(78, 78, 78, 0.92);
+    border-radius: 10px;
+    text-align: center;
+    color: #cccccc;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+#file:hover::before {
+    border: 2px solid rgba(255, 242, 1, 0.92);
+}
+
+#file:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+button#save{
+
+    background-color: rgba(26, 26, 26, 0.82);
+    border: 2px solid rgba(78, 78, 78, 0.92);
+    border-radius: 10px;
+    color: #cccccc;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button#save:hover{
+    border: 2px solid rgba(255, 242, 1, 0.92);
+}
