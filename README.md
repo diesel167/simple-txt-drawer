@@ -1,3 +1,7 @@
+Upload yout .txt file with commands for drawing and get new .txt file with the canvas.
+
+Example:
+
 C w h L x1 y1 x2 y2  
 R x1 y1 x2 y2  
 B x y c 
